@@ -2,5 +2,62 @@
 /*顶部*/
 .header {
   width: 100%;
-  height: 700px;
-  background: #fff; }
+  background: #F0EFEB; }
+
+/*topbar*/
+.jl-topbar {
+  width: 100%;
+  height: 75px;
+  background: rgba(152, 167, 164, 0.8); }
+
+.jl-nav {
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
+.jl-logo {
+  width: 20%;
+  height: 100%;
+  line-height: 75px; }
+  .jl-logo a {
+    font-size: 24px;
+    font-family: "楷体";
+    color: #fff; }
+
+.jl-menu {
+  width: 80%;
+  height: 100%;
+  line-height: 75px;
+  display: flex;
+  justify-content: space-between; }
+  .jl-menu a {
+    font-size: 16px;
+    color: #fff; }
+
+/*topbanner*/
+.jl-topbanner {
+  width: 100%;
+  background: #F0EFEB;
+  position: relative; }
+  .jl-topbanner a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #F0EFEB; }
+    .jl-topbanner a img {
+      display: block; }
+
+/*topbanner-spots*/
+.jl-topbanner-spots {
+  width: 70px;
+  height: 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 20%;
+  display: flex;
+  justify-content: space-around; }
+  .jl-topbanner-spots div {
+    width: 10px;
+    height: 100%;
+    border-radius: 50%;
+    background: #a2a2a2; }
