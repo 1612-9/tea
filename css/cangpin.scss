@@ -2,6 +2,7 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,input{
     margin:0;
     padding:0;
     list-style: none;
+//  font-size: 14px/20px;
 }
 a{
     text-decoration:none;
@@ -14,8 +15,8 @@ a:hover{
 
 
 .container{
-    width: 66.666666%;
-    margin: 0 auto;
+    width: 100%;
+//  margin: 0 auto;
 }
 
 //位置
@@ -52,7 +53,8 @@ div.title{
     height: auto;
     >img{
         display: block;
-        margin: 50px auto;
+        margin: 0px auto;
+        margin-top: 50px;
         width: 100%;
         height: auto;
     }
@@ -64,9 +66,10 @@ div.title{
 div#shougong-zuopin{
     background: rgba(223,231,236,1);
     height: auto;
-    padding:60px 0;
+    padding-top:60px;
+    padding-bottom: 60px;
     box-sizing: border-box;
-    overflow: hidden;
+//  overflow: hidden;
     >.ul{
         display: none;
     }
@@ -97,25 +100,28 @@ div#shougong-zuopin{
        box-shadow: 0 0 2px 15px #f0f0f0; 
     }
     >h3{
-        font-size: 20px;
+        font-size: 24px;
         margin: 20px 0;
         height: 20px;
     }
     >p{
+        font-size: 20px;
         margin-bottom: 10px;
         width: 100%;
         overflow: hidden;
         height: 20px;
+        line-height: 20px;
     }
 }
 
 .button{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 90%;
     margin: 20px auto;
     color: #959595;
     text-align: center;
+    font-size: 10px;
     >button{
 //    width: 80px;
       width: 10%;
@@ -124,6 +130,7 @@ div#shougong-zuopin{
       background: rgba(0,0,0,0);  
       box-shadow: none;
       border: 1.45px solid #959595;  
+      font-size: 8px;
     }
     >div{
         height: 28px;
@@ -143,6 +150,8 @@ div#shougong-zuopin{
         border: 1.45px solid #959595;
         text-align: center;
         font-weight: 600;
+        font-size: 8px;
+        
     }
     >div.active{
         background: #959595;
@@ -165,7 +174,8 @@ div.titleend{
 
 div#shougong-yiren{
     height: auto;
-    padding:60px 0;
+    padding-top:60px;
+    padding-bottom: 0px;
     box-sizing: border-box;
     overflow: hidden;
     >.ul{
@@ -178,28 +188,55 @@ div#shougong-yiren{
         box-shadow: 0 0 15px 17px #ccc;
         }
      .box>.img>img:hover{
-       box-shadow: 0 0 0px 15px #fff;    
+       transform:translateY(2px) ;
+       box-shadow: 0 0 0px 10px #fff;    
     }
-    >h3{
-        font-size: 20px;
+    h3{
+        font-size: 24px; 
         margin: 20px 0;
         height: 20px;
     }
-    >p{
+    
+    p{
+        font-size: 20px;
         margin-bottom: 10px;
         width: 100%;
         overflow: hidden;
         height: 20px;
+  
+    }
+    p:last-child{
+      
+        font-size: 18px;
     }
 
 }
 
+@media (min-width: 992px){
+          .box h3  {
+              font-size: 20px;
+          }
+          .box p  {
+              font-size: 14px!important;
+          }           
+        }
+
 @media (min-width: 992px) { 
     .container{
-        width:100%;
+        width:66.66%;
         margin: 0 auto;
     }
     div.titleend>img{
         margin-top: -100px;
+    }
+    .button {
+        width: 70%;
+        font-size:14px ;
+        button{
+           font-size:14px ; 
+        } 
+       input{
+           font-size:14px ;
+       }
     }
 }
