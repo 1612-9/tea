@@ -114,6 +114,17 @@ a:hover {
   text-align: center; }
 
 /*小屏*/
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative; }
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto; }
+
 .xheader {
   width: 100%;
   height: 84px;

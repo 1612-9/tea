@@ -11,6 +11,8 @@ $(document).ready(function(){
 		}
 	});
 	$(window).triggerHandler('resize');
+	//去掉滚动条
+	
 	//topbanner的轮播
 	ban('.jl-topbanner a','.jl-topbanner-spots div','.jl-topbanner','jl-spotshow','','');
 	ban('.jlx-topbanner a','.jlx-topbanner-spots div','.jlx-topbanner','jlx-spotshow','','');
