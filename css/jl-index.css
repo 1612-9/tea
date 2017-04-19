@@ -59,12 +59,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
     height: auto;
     background: #fff; }
     .jl-topbanner a img {
-      display: block;
-      height: auto; }
+      display: block; }
   .jl-topbanner a:first-of-type {
     display: block;
     z-index: 10; }
@@ -126,7 +124,9 @@ a:hover {
   z-index: 100; }
 
 .xcontent {
-  margin-top: 84px; }
+  margin-top: 84px;
+  position: relative;
+  background: #F0EFEB; }
 
 .jlx-topbar {
   width: 100%;
@@ -175,6 +175,25 @@ a:hover {
     font-size: 48px;
     font-family: '楷体'; }
 
+/*jlx-menu*/
+.jlx-nav {
+  width: 100%;
+  height: 165px;
+  border: 1px solid #888888;
+  background: #fff;
+  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.5);
+  padding: 0;
+  margin: 0; }
+  .jlx-nav .jlx-menu {
+    text-align: center;
+    line-height: 81px;
+    margin: 0; }
+    .jlx-nav .jlx-menu a {
+      color: #5b5b5b;
+      border: 1px solid #888888;
+      padding: 0;
+      font-size: 16px; }
+
 /*jlx-topbanner*/
 .jlx-topbanner {
   padding: 0;
@@ -186,12 +205,10 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
     height: auto;
     background: #fff; }
     .jlx-topbanner a img {
-      display: block;
-      height: auto; }
+      display: block; }
   .jlx-topbanner a:first-of-type {
     display: block;
     z-index: 10; }

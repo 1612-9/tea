@@ -8,10 +8,7 @@ $(document).ready(function(){
 		}else if(current<=768){
 			let topbhx=$('.jlx-topbanner a').height();
 			$('.jlx-topbanner').height(topbhx);
-		}else if(current==350){
-			
 		}
-		
 	});
 	$(window).triggerHandler('resize');
 	//topbanner的轮播
