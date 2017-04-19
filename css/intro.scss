@@ -1,0 +1,30 @@
+div.con{
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    .top{
+        height: 300px;
+        p.con{
+            color: #595959;
+            margin-top: 10px;
+        }
+    }
+    img{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+div.title{
+    height: 150px;
+    text-align: center;
+    .int-catalog{
+        margin-top: 40px;
+        img{
+            width: 100%;
+        }    
+    }
+}
+.row > div.bottom{
+    text-align: center;
+    margin-top: 40px;
+}

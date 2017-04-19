@@ -1,0 +1,37 @@
+div.con {
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+div.con .top {
+  height: 300px;
+}
+
+div.con .top p.con {
+  color: #595959;
+  margin-top: 10px;
+}
+
+div.con img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+div.title {
+  height: 150px;
+  text-align: center;
+}
+
+div.title .int-catalog {
+  margin-top: 40px;
+}
+
+div.title .int-catalog img {
+  width: 100%;
+}
+
+.row > div.bottom {
+  text-align: center;
+  margin-top: 40px;
+}
