@@ -1,7 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/font/iconfont.eot');
+  src: url('../iconfont/font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../iconfont/font/iconfont.woff') format('woff'),
+  url('../iconfont/font/iconfont.ttf') format('truetype'),
+  url('../iconfont/font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*大屏*/
 /*顶部*/
 .header{
     width: 100%;
-    background: #F0EFEB;
+    height: auto;
+    background: #fff;
 }
 /*topbar*/
 .jl-topbar{
@@ -15,9 +37,7 @@
     align-items: center;
 }
 .jl-logo{
-    width: 20%;
-    height: 100%;
-    line-height: 75px;
+    padding: 0;
     a{
         font: {
             size: 24px;
@@ -27,9 +47,6 @@
     }
 }
 .jl-menu{
-    width: 80%;
-    height: 100%;
-    line-height: 75px;
     display: flex;
     justify-content: space-between;
     a{
@@ -42,16 +59,24 @@
 /*topbanner*/
 .jl-topbanner{
     width: 100%;
-    background: #F0EFEB;
+    background: #fff;
     position: relative;
     a{
+        display: none;
         position: absolute;
         top: 0;
         left: 0;
+        display: block;
+        height: auto;
         img{
             display: block;
+            height: auto;
         };
-        background: #F0EFEB;
+        background: #fff;
+    }
+    a:first-of-type{
+        display: block;
+        z-index: 10;
     }
 }
 /*topbanner-spots*/
@@ -59,14 +84,219 @@
     width: 70px;
     height: 10px;
     position: absolute;
-    bottom: 20px;
+    bottom: 20%;
     right: 20%;
     display: flex;
+    z-index: 100;
     justify-content: space-around;
     div{
         width: 10px;
         height: 100%;
-        border-radius: 50%;
+        border-radius: 10px;
         background: #a2a2a2;
+    }
+    .jl-spotshow{
+        width: 20px;
+        background: #7a7a7a;
+    }
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+/*footer*/
+.jl-footer{
+    width: 100%;
+    height: 80px;
+    background: #879b9b;
+}
+.jl-footerbar{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    span{
+        color: #fff;
+    }
+   a{
+       display: inline-block;
+       padding: 0 5px;
+       color: #fff;
+       &:hover{
+           color: #23527C;
+           text-decoration: underline;
+       }
+   }
+}
+.jl-eori{
+    color: #fff;
+    text-align: center;
+}
+/*小屏*/
+.xheader{
+    width: 100%;
+    height: 84px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.xcontent{
+    margin-top: 84px;
+}
+.jlx-topbar{
+    width: 100%;
+    height: 84px;
+    background: #90a09c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    input{
+        width: 544px;
+        height: 52px;
+        position: relative;
+        border-radius: 5px;
+        border: none;
+        background: #90a09c;
+        border: 1px solid #7E8985;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        font-size: 20px;
+        color: #fff;
+    }
+    a{
+        color: #fff;
+        font: {
+            size: 40px;
+        };
+    }
+    .jlx-search{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+.jlx-title{
+    width: 100%;
+    height: 200px;
+    background: #f0efeb;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    span{
+        font: {
+            size: 30px;
+        };
+        color: #8f939d;
+    }
+    span:last-of-type{
+        font: {
+            weight: bold;
+        };
+    }
+    a{
+        display: block;
+        color: #8e909b;
+        font: {
+            size: 30px;
+        };
+    }
+    a:last-of-type{
+        font: {
+            size: 48px;
+            family: '楷体';
+        };
+    }
+}
+/*jlx-topbanner*/
+.jlx-topbanner{
+    padding: 0;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    a{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        height: auto;
+        img{
+            display: block;
+            height: auto;
+        };
+        background: #fff;
+    }
+    a:first-of-type{
+        display: block;
+        z-index: 10;
+    }
+}
+/*jlx-topbanner-spots*/
+.jlx-topbanner-spots{
+    width: 70px;
+    height: 10px;
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+    display: flex;
+    z-index: 100;
+    justify-content: space-around;
+    div{
+        width: 10px;
+        height: 100%;
+        border-radius: 10px;
+        background: #a2a2a2;
+    }
+    .jlx-spotshow{
+        width: 20px;
+        background: #7a7a7a;
+    }
+}
+a{
+    &:hover{
+        text-decoration: none;
+    }
+}
+/*jlxfooter*/
+.jlx-footer{
+    width: 100%;
+    height: 175px;
+    background: #879b9b;
+    box-sizing: border-box;
+    padding: {
+        top: 20px;
+    };
+}
+.jlx-footerbar{
+    text-align: center;
+    span{
+        font:{
+            size: 20px;
+        }
+        color: #fff;
+    }
+    span:first-of-type{
+        
+        display: block;
+    }
+    a{
+        display: inline-block;
+        padding: 0 5px;
+        color: #fff;
+        font:{
+            size: 20px;
+        }
+    }
+}
+.jlx-eori{
+    width: 100%;
+    p{
+        text-align: center;
+        color: #fff;
+        font: {
+            size: 20px;
+        };
     }
 }

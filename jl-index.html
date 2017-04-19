@@ -2,19 +2,26 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>茶找幸福--首页</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/jl-index.css"/>
 		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jl-index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<header class="container header">
+		<!--
+        	作者：948962131@qq.com
+        	时间：2017-04-19
+        	描述：大屏
+        -->
+		<header class="container header hidden-xs">
 			<section class="row">
-				<section class="col-sm-12 jl-topbar">
-					<section class="col-sm-10 col-sm-push-1 jl-nav">
-						<section class="jl-logo"><a href="">茶找幸福</a></section>
-						<section class="jl-menu">
+				<section class="col-xs-12 jl-topbar">
+					<section class="col-xs-12 jl-nav">
+						<section class="jl-logo col-xs-3"><a class="iconfont" href="">&#xe6c5; 茶找幸福</a></section>
+						<section class="jl-menu col-xs-9">
 							<a href="">网站首页</a>
 							<a href="">关于我们</a>
 							<a href="">茶具分类</a>
@@ -27,18 +34,89 @@
 				</section>
 			</section>
 			<section class="row">
-				<section class="col-sm-12 jl-topbanner">
+				<section class="col-xs-12 jl-topbanner">
 					<a href=""><img src="img/jl-banner-1.png" class="img-responsive"/></a>
-					<a href=""><img src="img/jl-banner-2.png"/ class="img-responsive"></a>
-					<a href=""><img src="img/jl-banner-2.png"/ class="img-responsive"></a>
-					<img src="img/jl-banner-1-1.png" alt="" />
+					<a href=""><img src="img/jl-banner-2.png" class="img-responsive"/></a>
+					<a href=""><img src="" class="img-responsive"/></a>
 					<div class="jl-topbanner-spots">
-						<div></div>
+						<div class="jl-spotshow"></div>
 						<div></div>
 						<div></div>
 					</div>
 				</section>
 			</section>
 		</header>
+		
+		
+		
+		
+		
+		<footer class="jl-footer hidden-xs">
+			<section class="jl-footerbar">
+				<span>&copy;2015-2017 UEK.COM 版权所有</span>
+					<a href="">著作权与商标声明</a><span>|</span>
+					<a href="">法律声明</a><span>|</span>
+					<a href="">服务条款</a><span>|</span>
+					<a href="">隐私声明</a><span>|</span>
+					<a href="">关于优逸客</a><span>|</span>
+					<a href="">联系我们</a><span>|</span>
+					<a href="">网站导航</a>
+			</section>
+			<section class="jl-eori">
+				<p>晋ICP备 17111612号-1</p>
+			</section>
+		</footer>
+		<!--
+        	作者：948962131@qq.com
+        	时间：2017-04-19
+        	描述：移动端
+        -->
+        <header class="container xheader hidden-sm hidden-md hidden-lg">
+        	<section class="row">
+        		<section class="col-xs-12 jlx-topbar">
+        			<input type="text" placeholder="🔍 " />
+        			<a class="iconfont" href="">&#xe60f;</a>
+        			<a class="iconfont" href="">&#xe61d;</a>
+        		</section>
+        	</section>
+        </header>
+        <section class="container xcontent hidden-sm hidden-md hidden-lg">
+        	<section class="row">
+        		<section class="col-xs-12 jlx-title">
+        			<span>Tea to find </span>
+        			<span>Happiness</span>
+        			<a class="iconfont" href="">&#xe6c5;</a>
+        			<a href="">茶找幸福</a>
+        		</section>
+        	</section>
+        	<section class="row">
+				<section class="col-xs-12 jlx-topbanner">
+					<a href=""><img src="img/jlx-banner-1.png" class="img-responsive"/></a>
+					<a href=""><img src="" class="img-responsive"/></a>
+					<a href=""><img src="img/jlx-banner-1.png" class="img-responsive"/></a>
+					<div class="jlx-topbanner-spots">
+						<div class="jlx-spotshow"></div>
+						<div></div>
+						<div></div>
+					</div>
+				</section>
+			</section>
+        </section>
+        
+        <footer class="jlx-footer hidden-sm hidden-md hidden-lg">
+			<section class="jlx-footerbar">
+				<span>&copy;2015-2017 UEK.COM 版权所有</span>
+					<a href="">著作权与商标声明</a><span>|</span>
+					<a href="">法律声明</a><span>|</span>
+					<a href="">服务条款</a><span>|</span>
+					<a href="">隐私声明</a><span>|</span>
+					<a href="">关于优逸客</a><span>|</span>
+					<a href="">联系我们</a><span>|</span>
+					<a href="">网站导航</a>
+			</section>
+			<section class="jlx-eori">
+				<p>晋ICP备 17111612号-1</p>
+			</section>
+		</footer>
 	</body>
 </html>
