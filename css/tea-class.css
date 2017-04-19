@@ -1,0 +1,15 @@
+.catalog, .bottom {
+  text-align: center;
+}
+
+.row img.title {
+  width: 100%;
+}
+
+.row div {
+  margin-top: 40px;
+}
+
+.row p.con {
+  color: #535353;
+}
