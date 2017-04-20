@@ -3,7 +3,7 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,input{
     padding:0;
     list-style: none;
 }
-a{
+a{ 
     text-decoration:none;
     color:#000;
 }
@@ -11,7 +11,9 @@ a:hover{
     text-decoration:none;
     color: #000;   
 }
-
+body{
+    overflow: hidden;
+}
 
 .container{
     width: 66.666666%;
@@ -22,8 +24,8 @@ a:hover{
 #wheres{
     overflow: hidden;
     width: 80%;
+    margin-top: 20px;
 }
-
 
 #where{
    font-size: 14px;
@@ -145,6 +147,12 @@ div.titleend{
         img{
             width: 100%;
         }
+    }
+    #where{
+       font-size: 20px;
+       >a{
+           font-size: 20px;
+       }
     }
     
     .ziti h3{

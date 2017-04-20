@@ -20,16 +20,17 @@ a:hover {
 
 #wheres {
   overflow: hidden;
-  width: 80%;
+  width: 100%;
+  margin-top: 20px;
 }
 
 #where {
-  font-size: 14px;
+  font-size: 20px;
   color: #393939;
 }
 
 #where > a {
-  font-size: 14px;
+  font-size: 20px;
   color: #393939;
 }
 
@@ -231,6 +232,15 @@ div#shougong-yiren p:last-child {
   .container {
     width: 66.66%;
     margin: 0 auto;
+  }
+  #wheres {
+    width: 80%;
+  }
+  #wheres #where {
+    font-size: 14px;
+  }
+  #wheres #where a {
+    font-size: 14px;
   }
   div.titleend > img {
     margin-top: -100px;

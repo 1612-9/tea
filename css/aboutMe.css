@@ -22,6 +22,7 @@ a:hover {
 #wheres {
   overflow: hidden;
   width: 80%;
+  margin-top: 20px;
 }
 
 #where {
@@ -148,6 +149,12 @@ div.titleend > img {
   }
   .title img {
     width: 100%;
+  }
+  #where {
+    font-size: 20px;
+  }
+  #where a {
+    font-size: 20px;
   }
   .ziti h3 {
     font-size: 24px;
