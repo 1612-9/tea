@@ -1,23 +1,34 @@
-$(document).ready(function(){
+$(function(){
+	let current=$(window).width();
+	if(current>768){				
+		$('.jl-topbanner').height(530);
+	}else if(current<=768){	
+		$('.jlx-topbanner').height(500);
+	}
 	//设置topbanner的高度
 	$(window).resize(function(){
 		let current=$(window).width();
-		if(current>768){			
-			let topbh=$('.jl-topbanner a img').height();		//设置大屏高度
-			$('.jl-topbanner').height(topbh);
-		}else if(current<=768){
-			
+		if(current>768){
+			let topbhx=$('.jl-topbanner a img').height();//设置大屏高度
+			if(topbhx==0){
+				$('.jl-topbanner').height(530);
+			}else{
+				$('.jl-topbanner').height(topbhx);
+			}
+		}else if(current<=768){	
 			let topbhx=$('.jlx-topbanner a img').height();//设置小屏高度
-			$('.jlx-topbanner').height(topbhx);
+			if(topbhx==0){
+				$('.jlx-topbanner').height(500);
+			}else{
+				$('.jlx-topbanner').height(topbhx);
+			}
+			
 		}
 	});
-	setTimeout(function(){
-		$(window).triggerHandler('resize')
-	},100)
-//	$(window).triggerHandler('resize');		//页面加载完成后resize事件至少执行一次
+	$(window).triggerHandler('resize');		//页面加载完成后resize事件至少执行一次
 	//nav选中
-	$('.jl-menu a').append('<div></div>').children().eq(0).addClass('jl-checkedr');
-	$('.jl-menu a').append('<div></div>').children().eq(1).addClass('jl-checkedc');
+//	$('.jl-menu a').append('<div></div>').children().eq(0).addClass('jl-checkedr');
+//	$('.jl-menu a').append('<div></div>').children().eq(1).addClass('jl-checkedc');
 	//topbanner的轮播
 	ban('.jl-topbanner a','.jl-topbanner-spots div','.jl-topbanner','jl-spotshow','','');
 	ban('.jlx-topbanner a','.jlx-topbanner-spots div','.jlx-topbanner','jlx-spotshow','','');

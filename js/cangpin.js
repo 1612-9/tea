@@ -30,4 +30,14 @@ $(document).ready(function(){
 		}
 		
 	})
+
+	$('.jl-menu a:nth-child(5)').append('<div></div>').children().eq(0).addClass('jl-checkedr');
+	$('.jl-menu a:nth-child(5)').append('<div></div>').children().eq(1).addClass('jl-checkedc');
+	
+	$('#shougong-zuopin .box').click(function(){
+		location.href='cangpin3.html';
+	})
+	$('#shougong-yiren .box').click(function(){
+		location.href='cangpin3-2.html';
+	})
 })
