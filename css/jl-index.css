@@ -47,7 +47,13 @@
   justify-content: space-between; }
   .jl-menu a {
     font-size: 16px;
-    color: #fff; }
+    color: #fff;
+    position: relative;
+    display: block;
+    height: 100%;
+    line-height: 75px; }
+    .jl-menu a:hover {
+      background: #1B6D85; }
 
 /*topbanner*/
 .jl-topbanner {
@@ -55,17 +61,15 @@
   background: #fff;
   position: relative; }
   .jl-topbanner a {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    height: auto;
     background: #fff; }
     .jl-topbanner a img {
       display: block; }
   .jl-topbanner a:first-of-type {
-    display: block;
-    z-index: 10; }
+    opacity: 1; }
 
 /*topbanner-spots*/
 .jl-topbanner-spots {
@@ -112,6 +116,25 @@ a:hover {
 .jl-eori {
   color: #fff;
   text-align: center; }
+
+/*选中nav类*/
+.jl-checkedr {
+  width: 36px;
+  height: 5px;
+  border-radius: 5px;
+  background: #fff;
+  position: absolute;
+  bottom: 10px;
+  left: 9px; }
+
+.jl-checkedc {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  bottom: 10px;
+  right: 9px; }
 
 /*小屏*/
 html {
@@ -212,17 +235,15 @@ body {
   background: #fff;
   position: relative; }
   .jlx-topbanner a {
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
-    height: auto;
     background: #fff; }
     .jlx-topbanner a img {
       display: block; }
   .jlx-topbanner a:first-of-type {
-    display: block;
-    z-index: 10; }
+    opacity: 1; }
 
 /*jlx-topbanner-spots*/
 .jlx-topbanner-spots {

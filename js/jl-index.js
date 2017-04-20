@@ -3,16 +3,17 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		let current=$(window).width();
 		if(current>768){
-			let topbh=$('.jl-topbanner a').height();
+			let topbh=$('.jl-topbanner a').height();		//设置大屏高度
 			$('.jl-topbanner').height(topbh);
 		}else if(current<=768){
-			let topbhx=$('.jlx-topbanner a').height();
+			let topbhx=$('.jlx-topbanner a').height();		//设置小屏高度
 			$('.jlx-topbanner').height(topbhx);
 		}
 	});
-	$(window).triggerHandler('resize');
-	//去掉滚动条
-	
+	$(window).triggerHandler('resize');		//页面加载完成后resize事件至少执行一次
+	//nav选中
+	$('.jl-menu a').append('<div></div>').children().eq(0).addClass('jl-checkedr');
+	$('.jl-menu a').append('<div></div>').children().eq(1).addClass('jl-checkedc');
 	//topbanner的轮播
 	ban('.jl-topbanner a','.jl-topbanner-spots div','.jl-topbanner','jl-spotshow','','');
 	ban('.jlx-topbanner a','.jlx-topbanner-spots div','.jlx-topbanner','jlx-spotshow','','');
