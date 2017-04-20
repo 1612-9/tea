@@ -24,7 +24,6 @@ a:hover{
     width: 80%;
 }
 
-
 #where{
    font-size: 14px;
    color: #393939;
@@ -59,6 +58,7 @@ div.title{
     >img:nth-child(2){
         margin: 0 auto;
     }
+    
 }
 
 //字体
@@ -98,6 +98,9 @@ div.title{
     p.english{
         font-size: 12px;
         color: #7b7b7b;
+    }
+    p.english:first-child{
+        margin-top: 50px;
     }
     
 }

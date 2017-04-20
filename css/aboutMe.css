@@ -103,6 +103,10 @@ div.title > img:nth-child(2) {
   color: #7b7b7b;
 }
 
+.p p.english:first-child {
+  margin-top: 50px;
+}
+
 .title {
   width: 100%;
   padding: 0;
