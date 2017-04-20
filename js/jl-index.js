@@ -2,15 +2,19 @@ $(document).ready(function(){
 	//设置topbanner的高度
 	$(window).resize(function(){
 		let current=$(window).width();
-		if(current>768){
-			let topbh=$('.jl-topbanner a').height();		//设置大屏高度
+		if(current>768){			
+			let topbh=$('.jl-topbanner a img').height();		//设置大屏高度
 			$('.jl-topbanner').height(topbh);
 		}else if(current<=768){
-			let topbhx=$('.jlx-topbanner a').height();		//设置小屏高度
+			
+			let topbhx=$('.jlx-topbanner a img').height();//设置小屏高度
 			$('.jlx-topbanner').height(topbhx);
 		}
 	});
-	$(window).triggerHandler('resize');		//页面加载完成后resize事件至少执行一次
+	setTimeout(function(){
+		$(window).triggerHandler('resize')
+	},100)
+//	$(window).triggerHandler('resize');		//页面加载完成后resize事件至少执行一次
 	//nav选中
 	$('.jl-menu a').append('<div></div>').children().eq(0).addClass('jl-checkedr');
 	$('.jl-menu a').append('<div></div>').children().eq(1).addClass('jl-checkedc');

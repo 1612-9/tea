@@ -1,18 +1,66 @@
+a:hover{
+    text-decoration: none;
+}
+#where{
+   font-size: 14px;
+   color: #393939;
+   >a{
+       font-size: 14px;
+       color: #393939;
+   }
+}
+@media screen and (max-width:992px){
+    #where{
+        font-size: 20px;
+        a{
+           font-size: 20px;
+        } 
+    }    
+}
+
 div.con{
-    height: 400px;
+    height: auto;
     margin: 0 auto;
     margin-top: 80px;
-    .top{
-        height: 300px;
+    overflow: hidden;
+    .top{ 
+        overflow: hidden;       
+        p > span{
+            color: #B33819;
+            font-weight: 600;
+        }
         p.con{
             color: #595959;
             margin-top: 10px;
         }
     }
     img{
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
     }
+    @media screen and (max-width: 992px){
+        .top p{
+            font-size: 14px;
+        }        
+    }
+    @media screen and (max-width: 750px){
+        .top p.con{
+            font-size: 19px;
+            color: #6b6b6b;
+        }
+        .bottom p.con{
+            font-size: 18px;
+            color: #6b6b6b;
+        }
+        div.img{
+            height: 405px;
+            margin-top: 40px;
+            border: 1px solid #DBDBDB;
+            padding-top: 80px;
+            box-sizing: border-box;
+        }
+    }
+    
 }
 div.title{
     height: 150px;
@@ -27,4 +75,5 @@ div.title{
 .row > div.bottom{
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 50px;
 }

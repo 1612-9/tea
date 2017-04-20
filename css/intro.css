@@ -1,11 +1,40 @@
+a:hover {
+  text-decoration: none;
+}
+
+#where {
+  font-size: 14px;
+  color: #393939;
+}
+
+#where > a {
+  font-size: 14px;
+  color: #393939;
+}
+
+@media screen and (max-width: 992px) {
+  #where {
+    font-size: 20px;
+  }
+  #where a {
+    font-size: 20px;
+  }
+}
+
 div.con {
-  height: 400px;
+  height: auto;
   margin: 0 auto;
   margin-top: 80px;
+  overflow: hidden;
 }
 
 div.con .top {
-  height: 300px;
+  overflow: hidden;
+}
+
+div.con .top p > span {
+  color: #B33819;
+  font-weight: 600;
 }
 
 div.con .top p.con {
@@ -14,8 +43,32 @@ div.con .top p.con {
 }
 
 div.con img {
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+@media screen and (max-width: 992px) {
+  div.con .top p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  div.con .top p.con {
+    font-size: 19px;
+    color: #6b6b6b;
+  }
+  div.con .bottom p.con {
+    font-size: 18px;
+    color: #6b6b6b;
+  }
+  div.con div.img {
+    height: 405px;
+    margin-top: 40px;
+    border: 1px solid #DBDBDB;
+    padding-top: 80px;
+    box-sizing: border-box;
+  }
 }
 
 div.title {
@@ -34,4 +87,5 @@ div.title .int-catalog img {
 .row > div.bottom {
   text-align: center;
   margin-top: 40px;
+  margin-bottom: 50px;
 }
