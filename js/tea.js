@@ -23,36 +23,18 @@ $(function(){
 		})
 	})
 	
-	let a=$(`.more > a`)
-	a.click(function(){
-		location.href="aboutMe.html"
+	$(`.spe>ul>li `).click(function(){
+		location.href="https://htmlpreview.github.io/?https://github.com/1612-9/tea/blob/master/intro.html"
 	})
 	
-	let as=$(`.mores`)
-	as.click(function(){
-		location.href="intro.html"
+	$(`.twop>ul>li `).click(function(){
+		location.href="https://htmlpreview.github.io/?https://github.com/1612-9/tea/blob/master/cangpin.html"
 	})
 	
-	let four=$(`.spe  li `)
-	four.click(function(){
-		location.href="intro.html"
+	$(`.maps`).click(function(){
+		location.href="https://htmlpreview.github.io/?https://github.com/1612-9/tea/blob/master/contact.html"
 	})
 	
-	let rright=$(`.youya div.right`)
-	rright.click(function(){
-		location.href="tea-culture.html"
-	})
-	
-	
-	let small=$(`.small div.moress`)
-	small.click(function(){
-		location.href="tea-class.html"
-	})
-	
-	let cla=$(`.zhanshi div.in`)
-	cla.click(function(){
-		location.href="tea-class.html"
-	})
 	//关于我们轮播
 	let me_now=0,me_next=0;
 	function me_move(){
