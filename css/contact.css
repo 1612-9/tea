@@ -45,6 +45,7 @@ a:hover {
 .map {
   overflow: hidden;
   margin-top: 70px;
+  margin-bottom: 50px;
 }
 
 .map img {
@@ -52,7 +53,6 @@ a:hover {
 }
 
 .contact-bottom {
-  margin-top: 70px;
   overflow: hidden;
   text-align: center;
 }

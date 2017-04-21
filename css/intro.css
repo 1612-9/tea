@@ -1,7 +1,6 @@
 a:hover {
   text-decoration: none;
 }
-
 #where {
   font-size: 14px;
   color: #393939;
@@ -55,19 +54,12 @@ div.con img {
 
 @media screen and (max-width: 750px) {
   div.con .top p.con {
-    font-size: 19px;
+    font-size: 18px;
     color: #6b6b6b;
   }
   div.con .bottom p.con {
     font-size: 18px;
     color: #6b6b6b;
-  }
-  div.con div.img {
-    height: 405px;
-    margin-top: 40px;
-    border: 1px solid #DBDBDB;
-    padding-top: 80px;
-    box-sizing: border-box;
   }
 }
 
@@ -88,8 +80,4 @@ div.title .int-catalog img {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 50px;
-  overflow: hidden;
-}
-.row > div.bottom img{
-	width: 100%;
 }
