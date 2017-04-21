@@ -35,9 +35,9 @@ $(document).ready(function(){
 	$('.jl-menu a:nth-child(5)').append('<div></div>').children().eq(1).addClass('jl-checkedc');
 	
 	$('#shougong-zuopin .box').click(function(){
-		location.href='cangpin3.html';
+		location.href='https://htmlpreview.github.io/?https://github.com/1612-9/tea/blob/master/cangpin3.html';
 	})
 	$('#shougong-yiren .box').click(function(){
-		location.href='cangpin3-2.html';
+		location.href='https://htmlpreview.github.io/?https://github.com/1612-9/tea/blob/master/cangpin3-2.html';
 	})
 })
