@@ -3,9 +3,6 @@
 			padding: 0;
 			list-style: none;
 		}
-		body{
-		/*	overflow: hidden;*/
-		}
 	
 		.container{
 			overflow: hidden;
@@ -97,11 +94,26 @@
 		}
 		.jieshao a.eng{
 			display: block;
-			font-size:9px;
+			font-size:8px;
 			color:#BABABA;
 			margin-top:8px;
 			font-family: helvetica;
 			font-weight: 100;
+		}
+		
+		@media only screen and (max-width: 768px) {
+		.jieshao h4{
+			font-size:14px;
+		}
+		.jieshao h2{
+			font-size:18px;
+		}
+		.jieshao a{
+			font-size:14px;
+		}
+		.jieshao a.eng{
+			font-size:12px;
+		}
 		}
 		
 		.jieshao ul.circle{
