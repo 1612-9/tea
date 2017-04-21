@@ -53,7 +53,7 @@
     height: 100%;
     line-height: 75px; }
     .jl-menu a:hover {
-      color: #1B6D85; }
+      background: #1B6D85; }
 
 /*topbanner*/
 .jl-topbanner {
@@ -170,7 +170,7 @@ body {
   justify-content: space-around;
   align-items: center; }
   .jlx-topbar input {
-    width: 544px;
+    width: 70%;
     height: 52px;
     position: relative;
     border-radius: 5px;
