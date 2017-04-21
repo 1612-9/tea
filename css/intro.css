@@ -88,4 +88,8 @@ div.title .int-catalog img {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 50px;
+  overflow: hidden;
+}
+.row > div.bottom img{
+	width: 100%;
 }
