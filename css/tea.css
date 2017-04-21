@@ -150,7 +150,8 @@
 			color:#D7D7D7;
 			
 		}
-		.in p{
+		.in a{
+			display: block;
 			height:60px;
 			width:60px;
 			border:1px solid #fff;
@@ -509,23 +510,24 @@
 			background: #B5B5B5;
 		}
 		
-		div.mores{
+		a.mores{
+			display: block;
 			width:60px;
 			height:auto;
 			margin: 0 auto;	
-		    /*padding: 13px 0;*/
-			cursor:pointer
+		    display: block;
 		}
 		
-		div.more{
+		a.more{
+			display: block;
 			margin-left:0px ;
 		}
 		
-		div.mores>img{
+		a.mores>img{
 			margin-bottom: -8px;
 		}
 		
-		div.mores>span{
+		a.mores>span{
 			width:55px;
 			height:18px;
 			border: 1px solid #A1928E;
