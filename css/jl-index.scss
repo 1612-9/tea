@@ -238,12 +238,12 @@ body{
         display: block;
         color: #8e909b;
         font: {
-            size: 20px;
+            size: 36px;
         };
     }
     a:last-of-type{
         font: {
-            size: 30px;
+            size: 36px;
             family: '楷体';
         };
     }
@@ -323,15 +323,15 @@ a{
     background: #879b9b;
     box-sizing: border-box;
     padding: {
-        top: 30px;
-        bottom: 30px;
+        top: 15px;
+        bottom: 15px;
     };
 }
 .jlx-footerbar{
     text-align: center;
     span{
         font:{
-            size: 14px;
+            size: 10px;
         }
         color: #fff;
     }
@@ -344,7 +344,7 @@ a{
         padding: 0 5px;
         color: #fff;
         font:{
-            size: 14px;
+            size: 10px;
         }
     }
 }
@@ -360,7 +360,7 @@ a{
         text-align: center;
         color: #fff;
         font: {
-            size: 14px;
+            size: 10px;
         };
     }
 }

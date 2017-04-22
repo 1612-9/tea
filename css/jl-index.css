@@ -204,9 +204,9 @@ body {
   .jlx-title a {
     display: block;
     color: #8e909b;
-    font-size: 20px; }
+    font-size: 36px; }
   .jlx-title a:last-of-type {
-    font-size: 30px;
+    font-size: 36px;
     font-family: '楷体'; }
 
 /*jlx-menu*/
@@ -272,13 +272,13 @@ a:hover {
   width: 100%;
   background: #879b9b;
   box-sizing: border-box;
-  padding-top: 30px;
-  padding-bottom: 30px; }
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .jlx-footerbar {
   text-align: center; }
   .jlx-footerbar span {
-    font-size: 14px;
+    font-size: 10px;
     color: #fff; }
   .jlx-footerbar span:first-of-type {
     display: block; }
@@ -286,7 +286,7 @@ a:hover {
     display: inline-block;
     padding: 0 5px;
     color: #fff;
-    font-size: 14px; }
+    font-size: 10px; }
 
 .jlx-eori {
   width: 100%; }
@@ -297,4 +297,4 @@ a:hover {
     margin-right: 0;
     text-align: center;
     color: #fff;
-    font-size: 14px; }
+    font-size: 10px; }
