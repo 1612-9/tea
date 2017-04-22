@@ -291,6 +291,7 @@ a:hover {
 .jlx-eori {
   width: 100%; }
   .jlx-eori p {
+    margin: 0;
     text-align: center;
     color: #fff;
     font-size: 14px; }
