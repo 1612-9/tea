@@ -1,6 +1,9 @@
 a:hover {
   text-decoration: none;
 }
+.intro-title{
+	margin-bottom: 40px;
+}
 #where {
   font-size: 14px;
   color: #393939;
@@ -81,3 +84,9 @@ div.title .int-catalog img {
   margin-top: 40px;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 768px) {
+	.row > div.bottom img{
+		width: 100%;
+	}
+}
+

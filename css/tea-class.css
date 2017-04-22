@@ -48,3 +48,8 @@ div.imgbox{
 .con > img{
 	width: 100%;
 }
+@media screen and (max-width: 768px) {
+	.con .bottom img{
+		width: 100%;
+	}
+}
